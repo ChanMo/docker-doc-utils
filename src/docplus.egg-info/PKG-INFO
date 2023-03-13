@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: docplus
+Version: 0.0.4
+Summary: Doc Utils APIs
+Author-email: ChanMo <chan.mo@outlook.com>
+Project-URL: Homepage, https://github.com/ChanMo/docker-doc-utils
+Project-URL: Bug Tracker, https://github.com/ChanMo/docker-doc-utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Documents Utils
+
+## Usage
+
+Make sure `libreoffice` is installed.
+
+Install docplus
+
+```
+pip install --user docplus
+```
+
+Run API Servier
+
+```
+python -m docplus
+```
+
+## APIs
+
+### Format Convert
+
+use httpie, convert to pdf
+```
+  http POST -f :5000/convert_to/pdf file@~/demo.docx
+```
+
+use httpie, convert to html
+```
+  http POST -f :5000/convert_to/html file@~/demo.docx
+```

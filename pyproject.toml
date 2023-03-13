@@ -1,0 +1,21 @@
+[build-system]
+requires=["setuptools", "flask", "werkzeug"]
+build-backend="setuptools.build_meta"
+[project]
+name = "docplus"
+version = "0.0.4"
+authors = [
+{name="ChanMo", email="chan.mo@outlook.com"}
+]
+description = "Doc Utils APIs"
+readme = "README.md"
+requires-python = ">3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ChanMo/docker-doc-utils"
+"Bug Tracker" = "https://github.com/ChanMo/docker-doc-utils/issues"
